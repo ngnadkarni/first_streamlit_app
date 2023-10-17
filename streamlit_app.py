@@ -39,7 +39,6 @@ try:
   else:
     back_from_function=get_fruityvice_data(Fruit_choice)
     streamlit.dataframe(back_from_function)
-  
 
 #import snowflake.connector
 
@@ -55,7 +54,6 @@ try:
       my_cnx=snowflake.connector.connect(**streamlit.secrets["snowflake"])
       my_data_rows= get_fruit_load_list()
       streamlit.dataframe(my_data_rows)
-
 
   #Allow the end uesr to add a fruit to the list
   def insert_row_snowflake(new_fruit):
