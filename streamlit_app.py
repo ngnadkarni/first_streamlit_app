@@ -41,7 +41,6 @@ try:
 
 #don't run anything past here while we troubleshoot
 #streamlit.stop()
-
 #import snowflake.connector
 #new functions and some buttons
 streamlit.header("The Fruit Load List Contains:")
