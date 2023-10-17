@@ -40,7 +40,7 @@ try:
 	  streamlit.dataframe(back_from_function)
 
 #don't run anything past here while we troubleshoot
-streamlit.stop()
+#streamlit.stop()
 #import snowflake.connector
 
 #new functions and some buttons (Move the Fruit Load List Query and Load into a Button Action)
