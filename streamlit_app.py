@@ -29,7 +29,7 @@ streamlit.dataframe(fruits_to_show)
 def get_fruityvice_data(this_fruit_choice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+this_fruit_choice)
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())	
-	return fruityvice_normalized
+    return fruityvice_normalized
 
 #NEW SECTION to display fruityvice api response
 streamlit.header('Fruityvice Fruit Advice!')
@@ -38,8 +38,8 @@ try:
   if not fruit_choice:
     streamlit.error ("Please select a fruit to get information.")
   else:
-	back_from_function=get_fruityvice_data(Fruit_choice)
-	streamlit.dataframe(back_from_function)
+    back_from_function=get_fruityvice_data(Fruit_choice)
+    streamlit.dataframe(back_from_function)
 
 #Don't run anything past here while we troubleshoot
 streamlit.stop()
